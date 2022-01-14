@@ -7,6 +7,13 @@ var router = Router();
 var empSvc = new EmployeeService();
 
 
+
+router.get("/demo", async (req, res) => {
+
+        res.status(200).json({"Data":"Demo page here "});
+});
+
+
 //GET http://localhost:5000/employees
 //Get All employees
 router.get("/", async (req, res) => {
